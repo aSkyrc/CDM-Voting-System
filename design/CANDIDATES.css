@@ -1,0 +1,208 @@
+
+.candidateList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.candidateList label {
+    margin-right: 20px;
+}
+
+.candidateList input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.candidateList input[type="radio"]:checked {
+    border-color: #000000;
+    background-color: #007000;
+}
+
+.position-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.position-section {
+    background-color: #ffffff99;
+    width: calc(49% - 15px); /* Set width for each position */
+    margin: 5px 10px 5px 10px;
+    padding: 0 5px 0 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.candidates-container {
+    text-align: center;
+    gap: 30px;
+}
+
+.candidate-row {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.candidate-wrapper {
+    width: calc(50% - 5px); /* Set width for each candidate */
+    margin-bottom: 20px;
+    border: 2px solid #007000;
+    border-radius: 10px;
+    background-color: #ffd90099;
+    cursor: pointer;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.applicant-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Make candidate info same size */
+}
+
+.applicant-image {
+    display: flex;
+    justify-content: center;
+    width: 300px; /* Set width */
+    height: 180px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Adjust margin as needed */
+    margin-bottom: 5px;
+}
+
+.applicant-image img {
+    border-radius: 50%; /* Make it circular */
+    border: 2px solid #000000;
+}
+
+.applicant-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.applicant-platform {
+    background-color: white;
+    display: block;
+    text-align: justify; /* Justify the text */
+    width: 100%; /* Make it take the full width */
+    padding: 10px; /* Add some padding for better readability */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual separation */
+    margin-top: 10px; /* Add margin on top for spacing */
+    border: 1px solid #000000
+}
+
+.applicant-details h5 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.applicant-name,
+.applicant-year,
+.applicant-institute,
+.applicant-position {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2, h3 {
+   text-align: center;
+}
+
+/* Partylist-specific styles */
+.partylist-section {
+    margin: 0 20px 40px 20px;
+}
+
+.partylist-positions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Display 4 candidates per row */
+    gap: 10px;
+}
+
+.partylist-position-section {
+    border: 2px solid #007000;
+    background-color: #ffd90099;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.partylist-candidates-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.partylist-candidate-wrapper {
+    flex: 0 0 calc(95% - 10px); /* Adjust to 23% width with spacing */
+    margin-bottom: 20px;
+    border-radius: 10px; /* Adjusted border radius */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.partylist-applicant-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partylist-applicant-image {
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.partylist-applicant-image img {
+    width: 100%; /* Adjust image size */
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+.partylist-applicant-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.partylist-applicant-name,
+.partylist-applicant-year,
+.partylist-applicant-institute,
+.partylist-applicant-position,
+.partylist-applicant-platform {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.partylist-no-candidate {
+    text-align: center;
+    color: #999;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.no-partylist-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
+}

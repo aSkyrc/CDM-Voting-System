@@ -1,0 +1,81 @@
+h5 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+h6 {
+    margin: 20px 0 ;
+    font-size: 20px;
+}
+
+/* Container for the candidate info */
+.candidate-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.candidate-info-container.left {
+    justify-content: flex-start; /* Align to the left */
+    margin-left: 10px;
+}
+
+.candidate-info-container.right {
+    justify-content: flex-end; /* Align to the right */
+}
+
+/* Individual candidate container */
+.leading-candidate {
+    display: flex;
+    align-items: center;
+    width: 48%; /* Adjust width for two items per row, accounting for gap */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #007000;
+    border-radius: 10px;
+    margin: 20px
+}
+
+/* CSS for candidate image */
+.candidate-lead-image {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 20px; /* Space between image and details */
+    padding-right: 15px;
+    border-right: 2px solid black;
+}
+.candidate-lead-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid #007000; /* Add border to the circle */
+}
+
+
+
+/* CSS for candidate details */
+.candidate-lead-details {
+    text-align: left; /* Align text to the left */
+    margin-left: 20px;
+}
+
+.candidate-lead-details p {
+    margin: 5px 0;
+    margin-bottom: 20px;
+}
+
+.centered-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+    text-align: center;
+    font-size: 1.5em;
+    color: #000000;
+}
+

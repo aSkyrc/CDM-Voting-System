@@ -1,0 +1,280 @@
+body {
+    margin: 0 0 0 20%; /* Adjust values as needed */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:#e4e4e4;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 2px solid #000000;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    z-index: 1; 
+}
+
+.sidebar{
+    background: linear-gradient(to top, #d0d014,#013b01);
+}
+
+.brand-container {
+    display: flex;
+    align-items: center;
+    color: rgb(241, 232, 232);
+    padding: 15px 20px; /* Adjust padding as needed */
+    max-width: 100%; /* Added to psrevent overflow */
+}
+
+.logo {
+    margin-right: 20px; /* Adjust margin as needed */
+    margin-left: 5px;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.studentnumber {
+    margin: 10px 10px; /* Adjust margin as needed */
+    font-size: 17px;
+}
+
+.LinkContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%; /* Ensuring consistent width for all links */
+}
+
+.links {
+    display: block;
+    margin: 15px 0; /* Adjusted margin */
+    padding: 10px 0; /* Added padding */
+    text-decoration: none;
+    text-align: center;
+    color: rgb(241, 232, 232);
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 40%; /* Ensuring all links have same width */
+}
+
+.LinkContainer .links:hover {
+    border-bottom: 2px solid #ffd900;
+}
+
+.btnlink {
+    position: absolute;
+    padding: 10px 10px;
+    background: green;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    bottom: 30px;
+    width: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1.5px 10px 0px;
+}
+
+.btnlink:hover{
+    color: white;
+}
+
+.top-navbar {
+    display: block;
+    width: calc(100% - 20%); /* Adjust according to sidebar width */
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 20%; /* Width of the sidebar */
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    background-color: #e4e4e4;
+}
+
+.dmodal {
+    display: none; /* Initially hide the modal */
+    position: fixed;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensure it's above other elements */
+}
+
+.dmodal-content {
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.top-navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    margin: 10px 0 0 40px;
+    padding: 10px 15px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.top-navbar a:hover,
+.top-navbar a.active {
+    border-color: #007000;
+}
+
+.links.active {
+    border-bottom: 2px solid #ffd900;
+}
+
+@media (max-width: 1024px) {
+    body {
+        margin: 70px 0 0 15%; /* Adjust values as needed */
+    }
+
+    nav {
+        width: 15%; /* Adjusted width */
+    }
+
+    .sidebar {
+        background: linear-gradient(360deg,#ffd900, #003004); /* Set background as linear gradient */
+    }
+
+    .brand-container {
+        padding: 15px 2px; /* Adjusted padding */
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .studentnumber {
+        font-size: 14px; /* Adjusted font size for the student number */
+    }
+
+    .LinkContainer {
+        height: auto; /* Adjusted height */
+        width: 100%; /* Adjusted width */
+    }
+
+    .links {
+        width: 80%; /* Adjusted width */
+        margin: 10px auto; /* Centered the links */
+    }
+
+    .top-navbar {
+        width: calc(100% - 15%);
+        left: 15%;
+    }
+
+    .btnlink {
+        width: 60%;
+    }
+
+    .top-navbar a {
+        margin-left: 20px;
+    }
+}
+
+
+
+/* For tablets and small screens */
+@media (max-width: 768px) {
+    body {
+        margin: 0; /* Remove left margin */
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border-bottom: 2px solid #000000; /* Widen the bottom border */
+    }
+    
+    .brand-container {
+        justify-content: center;
+    }
+
+
+    .LinkContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .links {
+        width: 80%;
+        margin: 10px 5px; /* Adjusted margin */
+    }
+
+    .btnlink {
+        position: static;
+        margin: 20px auto;
+        width: 50%;
+    }
+    
+    /* Responsive styles for .top-navbar */
+    .top-navbar {
+        width: calc(100% - 20%);
+        height: 60px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom: 2px solid black; /* Widen the bottom border */
+        background-color: #e4e4e4;
+        display: flex;
+        align-items: center;
+    }
+
+    .top-navbar a {
+        margin: 0 15px; /* Adjust margin for better spacing */
+        padding: 10px 10px; /* Adjusted padding */
+        font-size: 11px; /* Minimized font size */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .logo {
+        margin-right: 10px; /* Adjusted margin */
+        margin-left: 2px; /* Adjusted margin */
+    }
+
+    .studentnumber {
+        margin: 5px 5px; /* Adjusted margin */
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .links {
+        width: 100%;
+        margin: 5px 0; /* Adjusted margin */
+        padding: 8px 0; /* Adjusted padding */
+        font-size: 11px; /* Adjusted font size */
+    }
+
+    .btnlink {
+        width: 70%;
+        font-size: 10px; /* Adjusted font size */
+        padding: 8px 10px; /* Adjusted padding */
+    }
+}

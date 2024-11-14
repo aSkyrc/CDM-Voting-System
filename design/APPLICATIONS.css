@@ -1,0 +1,183 @@
+
+/* Independent */
+/* Style for the form container */
+.independentform {
+    width: 600px;
+    margin: 50px auto; /* Updated margin */
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 10px 0px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form labels */
+.independentform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form inputs */
+.independentform input[type="text"],
+.independentform input[type="file"],
+.independentform textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+.independentform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007000;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.independentform input[type="submit"]:hover {
+    background-color: #005000;
+}
+
+.independentform textarea[name="objectives"] {
+    width: calc(100% - 0px); /* Adjusted width to leave space for borders and padding */
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set initial height */
+    margin-bottom: 10px; /* Added margin to separate from other elements */
+}
+
+.independentform select {
+    margin-bottom: 10px;
+}
+
+.independentform h2 {
+    margin: 0;
+    text-align: center;
+}
+
+
+/* Partylist */
+
+.partylistform {
+    width: 600px;
+    margin: 10px auto; /* Updated margin */
+    margin-top: 80px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 1.5px 10px 0px;
+    background-color: #f9f9f9;
+}
+
+/* Style for form labels */
+.partylistform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for form inputs */
+.partylistform input[type="text"],
+.partylistform input[type="file"],
+.partylistform textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+.partylistform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007000;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.partylistform input[type="submit"]:hover {
+    background-color: #005000;
+}
+
+.partylistform textarea[name="objectives"] {
+    width: calc(100% - 0px); /* Adjusted width to leave space for borders and padding */
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set initial height */
+    margin-bottom: 10px; /* Added margin to separate from other elements */
+}
+
+.partylistform select {
+    margin-bottom: 10px;
+}
+
+.partylistform h2 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Flex container for specified elements */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+/* Flex item styling */
+.flex-item {
+    width: 48%; /* Adjust as needed */
+}
+
+#position,
+#positionPartylist {
+    padding: 10px 10px;
+}
+
+#partyListContainer select {
+    padding: 10px 20px; /* Adjust padding here */
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+@media (max-width: 1024px) {
+    .independentform,
+    .partylistform {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 50px auto 80px; /* Updated margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .independentform,
+    .partylistform {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 30px auto 60px; /* Updated margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .independentform,
+    .partylistform {
+        width: 85%; /* Adjusted width for smaller screens */
+        margin: 30px auto 40px; /* Updated margin */
+        padding: 15px; /* Adjusted padding for smaller screens */
+    }
+}

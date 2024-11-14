@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #e4e4e4;
+}
+
+.forgot-password-container {
+    width: 400px;
+    margin: 0 auto; /* Center horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center vertically and horizontally */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #007000;
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-password-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.forgot-password-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-row {
+    width: 100%;
+}
+
+.input-box {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-box .details {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-box input[type="email"],
+.input-box input[type="password"],
+.input-box input[type="Confirm-Password"] 
+{
+    width: calc(100% - 0px);
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-box.otp-row {
+    display: flex;
+    align-items: center;
+}
+
+#otp {
+    width: 63%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-box .otp-row input[type="text"] {
+    flex-grow: 1; /* Let the input grow to fill available space */
+    margin-right: 10px; /* Space between input and button */
+}
+
+
+.otpbtn {
+    padding: 10px 30px;
+    background: #005a00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #000000;
+}
+
+.otpbtn:hover {
+    background-color: #005500; /* Optional: darker green on hover */
+    color:#ffd700;
+}
+
+.confirm {
+    width: 100%;
+    padding: 10px 20px;
+    background: #005a00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border: 1px solid #000000;
+}
+
+.confirm:hover {
+    background-color: #005500; /* Optional: darker green on hover */
+    color: #ffd700;
+}
+
+.btnlink {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+.btnlink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 400px; /* Adjusted width for smaller screens */
+        height: 400px; /* Adjusted height in pixels */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+        text-align: center; /* Center text */
+    }
+
+    .position-group {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Align dropdowns vertically */
+        align-items: center; /* Center dropdowns horizontally */
+    }
+
+    .position-dropdown {
+        width: 100%; /* Full width */
+        margin-top: 10px; /* Add margin between dropdowns */
+    }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+    .modal-content {
+        max-width: 300px; /* Adjusted width for smaller screens */
+        height: 300px; /* Adjusted height in pixels */
+        padding: 20px; /* Adjusted padding for smaller screens */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+        text-align: center; /* Center text */
+    }
+
+    .position-group {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Align dropdowns vertically */
+        align-items: center; /* Center dropdowns horizontally */
+    }
+
+    .position-dropdown {
+        width: 100%; /* Full width */
+        margin-top: 10px; /* Add margin between dropdowns */
+    }
+}
+

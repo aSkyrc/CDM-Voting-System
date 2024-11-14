@@ -1,0 +1,180 @@
+#notification-bell {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 1001;
+}
+
+#notification-bell img {
+    width: 100%;
+    height: 100%;
+}
+
+#notification-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0 5px;
+    font-size: 12px;
+    display: none;
+}
+
+#notifications {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.notification {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.notification:last-child {
+    border-bottom: none;
+}
+
+#countdown {
+    margin: 0 300px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    margin-left: 20px;
+}
+
+#timer {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.announcement {
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+.announcement .image {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.announcement .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.announcement .content {
+    flex: 2;
+    padding-left: 20px;
+}
+
+.centered-notification p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    #countdown {
+        margin: 0 200px;
+        padding: 15px;
+    }
+
+    .announcement {
+        width: 90%;
+    }
+}
+
+@media (max-width: 758px) {
+    #countdown {
+        margin: 0 100px;
+        padding: 10px;
+    }
+
+    .announcement {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .announcement .image {
+        padding-right: 0;
+        padding-bottom: 10px;
+    }
+
+    .announcement .content {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown {
+        margin: 0 20px;
+        padding: 10px;
+    }
+
+    .announcement {
+        width: 95%;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .announcement .image {
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+
+    .announcement .content {
+        padding-left: 0;
+        padding-top: 5px;
+    }
+
+    h4 {
+        margin-left: 10px;
+    }
+
+    #timer {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+}
